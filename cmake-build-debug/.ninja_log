@@ -1,3 +1,6 @@
 # ninja log v5
 2	770	6993698559661530	CMakeFiles/server_from_scratch.dir/main.c.obj	8d95f2460f299e0d
 771	871	6993698560608105	server_from_scratch.exe	1130b6a4db839ad2
+4	764	6993702665580695	CMakeFiles/server_from_scratch.dir/server.c.obj	585f0114d3a1a79a
+0	164	6993705316302398	build.ninja	7a5f97dc2ba34bbe
+1	770	6993702665653278	CMakeFiles/server_from_scratch.dir/client.c.obj	3b08f1114219ab64
