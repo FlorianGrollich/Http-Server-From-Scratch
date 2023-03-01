@@ -3,7 +3,7 @@
 #include <ws2tcpip.h>
 #include <unistd.h>
 #include <string.h>
-
+#include <errno.h>
 
 #define PORT 8080
 
@@ -15,7 +15,8 @@ int main(int argc, char const *argv[])
     char buffer[1024] = {0};
     if ((sock = socket(AF_INET, SOCK_STREAM, 0)) < 0)
     {
-        printf("\n Socket creation error \n");
+
+        printf("Socket creation error: %s\n", strerror(errno));
         return -1;
     }
 

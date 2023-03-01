@@ -28,7 +28,6 @@ int main(int argc, char const *argv[])
 
     memset(address.sin_zero, '\0', sizeof address.sin_zero);
 
-
     if (bind(server_fd, (struct sockaddr *)&address, sizeof(address))<0)
     {
         perror("In bind");
