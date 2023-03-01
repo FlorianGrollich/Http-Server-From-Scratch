@@ -55,6 +55,12 @@ build CMakeFiles/server_from_scratch.dir/main.c.obj: C_COMPILER__server_from_scr
   OBJECT_DIR = CMakeFiles\server_from_scratch.dir
   OBJECT_FILE_DIR = CMakeFiles\server_from_scratch.dir
 
+build CMakeFiles/server_from_scratch.dir/client.c.obj: C_COMPILER__server_from_scratch_Debug C$:/Users/F-Gro/CLionProjects/server-from-scratch/client.c || cmake_object_order_depends_target_server_from_scratch
+  DEP_FILE = CMakeFiles\server_from_scratch.dir\client.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu11
+  OBJECT_DIR = CMakeFiles\server_from_scratch.dir
+  OBJECT_FILE_DIR = CMakeFiles\server_from_scratch.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target server_from_scratch
@@ -63,7 +69,7 @@ build CMakeFiles/server_from_scratch.dir/main.c.obj: C_COMPILER__server_from_scr
 #############################################
 # Link the executable server_from_scratch.exe
 
-build server_from_scratch.exe: C_EXECUTABLE_LINKER__server_from_scratch_Debug CMakeFiles/server_from_scratch.dir/main.c.obj
+build server_from_scratch.exe: C_EXECUTABLE_LINKER__server_from_scratch_Debug CMakeFiles/server_from_scratch.dir/main.c.obj CMakeFiles/server_from_scratch.dir/client.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lws2_32  -lwsock32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\server_from_scratch.dir
