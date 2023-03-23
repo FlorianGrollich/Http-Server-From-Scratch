@@ -1,3 +1,4 @@
-C:/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug/CMakeFiles/server_from_scratch.dir
+C:/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug/CMakeFiles/client.dir
+C:/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug/CMakeFiles/server.dir
 C:/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug/CMakeFiles/rebuild_cache.dir

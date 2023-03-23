@@ -4,4 +4,5 @@ link_libraries(ws2_32 wsock32)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(server_from_scratch server.c)
+add_executable(client client.c)
+add_executable(server server.c)
