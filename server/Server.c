@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct Server server_constructor(int domain, int service, int protocol, u_long innterface, int port, int backlog, void(*launch)(void)) {
+struct Server server_constructor(int domain, int service, int protocol, u_long innterface, int port, int backlog, void(*launch)(struct Server *server)) {
     struct Server server;
 
     server.domain = domain;
@@ -14,6 +14,7 @@ struct Server server_constructor(int domain, int service, int protocol, u_long i
     server.innterface = innterface;
     server.port = port;
     server.backlog = backlog;
+    server.launch = launch;
 
     server.address.sin_family = domain;
     server.address.sin_port = htons(port);
@@ -36,7 +37,6 @@ struct Server server_constructor(int domain, int service, int protocol, u_long i
         exit(1);
     }
 
-    server.launch = launch;
 
     return server;
 }
