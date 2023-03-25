@@ -55,6 +55,12 @@ build CMakeFiles/client.dir/client.c.obj: C_COMPILER__client_Debug C$:/Users/F-G
   OBJECT_DIR = CMakeFiles\client.dir
   OBJECT_FILE_DIR = CMakeFiles\client.dir
 
+build CMakeFiles/client.dir/server/server.c.obj: C_COMPILER__client_Debug C$:/Users/F-Gro/CLionProjects/server-from-scratch/server/server.c || cmake_object_order_depends_target_client
+  DEP_FILE = CMakeFiles\client.dir\server\server.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu11
+  OBJECT_DIR = CMakeFiles\client.dir
+  OBJECT_FILE_DIR = CMakeFiles\client.dir\server
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target client
@@ -63,7 +69,7 @@ build CMakeFiles/client.dir/client.c.obj: C_COMPILER__client_Debug C$:/Users/F-G
 #############################################
 # Link the executable client.exe
 
-build client.exe: C_EXECUTABLE_LINKER__client_Debug CMakeFiles/client.dir/client.c.obj
+build client.exe: C_EXECUTABLE_LINKER__client_Debug CMakeFiles/client.dir/client.c.obj CMakeFiles/client.dir/server/server.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lws2_32  -lwsock32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\client.dir
