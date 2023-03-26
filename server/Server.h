@@ -2,8 +2,6 @@
 #define Server_h
 
 #include <winsock2.h>
-#include <ws2tcpip.h>
-// include this header for u_long type
 
 struct Server {
     int domain;
