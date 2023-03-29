@@ -2,8 +2,6 @@
 #include <winsock2.h>
 #include <ws2tcpip.h>
 #include <unistd.h>
-#include <stdlib.h>
-#include <string.h>
 
 #define PORT 8080
 int main(int argc, char const *argv[])
@@ -28,7 +26,7 @@ int main(int argc, char const *argv[])
 
     memset(address.sin_zero, '\0', sizeof address.sin_zero);
 
-    if (bind(server_fd, (struct sockaddr *)&address, sizeof(address))<0)
+    if ((bind(server_fd, (struct sockaddr *)&address, sizeof(address))) < 0)
     {
         perror("In bind");
         exit(EXIT_FAILURE);
