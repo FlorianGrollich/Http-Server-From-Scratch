@@ -13,6 +13,14 @@ int main(int argc, char const *argv[])
     int addrlen = sizeof(address);
 
     char *hello = "Hello from server";
+    WSADATA wsaData;
+
+    int iResult;
+    iResult = WSAStartup(MAKEWORD(2,2), &wsaData);
+    if (iResult != 0) {
+        printf("WSAStartup failed: %d\n", iResult);
+        return 1;
+    }
 
     // Creating socket file descriptor
     if ((server_fd = socket(AF_INET, SOCK_STREAM, 0)) < 0)

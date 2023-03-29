@@ -13,7 +13,7 @@ struct Server {
 
     struct sockaddr_in address;
 
-    int socket;
+    unsigned int socket;
 
     void (*launch)(struct Server *server);
 };

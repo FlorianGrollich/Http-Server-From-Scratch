@@ -20,7 +20,7 @@ struct Server server_constructor(int domain, int service, int protocol, u_long i
 
     server.socket = socket(domain, service, protocol);
 
-    if(server.socket == 0) {
+    if(server.socket < 0) {
         perror("Socket creation error: ");
         exit(1);
     }
