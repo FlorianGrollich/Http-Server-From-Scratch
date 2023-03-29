@@ -8,14 +8,14 @@
 #define PORT 8080
 int main(int argc, char const *argv[])
 {
-    int server_fd, new_socket; long valread;
+    unsigned int server_fd, new_socket; long valread;
     struct sockaddr_in address;
     int addrlen = sizeof(address);
 
     char *hello = "Hello from server";
 
     // Creating socket file descriptor
-    if ((server_fd = socket(AF_INET, SOCK_STREAM, 0)) == 0)
+    if ((server_fd = socket(AF_INET, SOCK_STREAM, 0)) < 0)
     {
         perror("In socket");
         exit(EXIT_FAILURE);
