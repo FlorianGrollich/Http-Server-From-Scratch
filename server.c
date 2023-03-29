@@ -6,7 +6,9 @@
 #define PORT 8080
 int main(int argc, char const *argv[])
 {
-    unsigned int server_fd, new_socket; long valread;
+    unsigned int server_fd;
+    int  new_socket;
+    long valread;
     struct sockaddr_in address;
     int addrlen = sizeof(address);
 
