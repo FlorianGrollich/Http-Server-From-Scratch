@@ -3,7 +3,6 @@
 #include <ws2tcpip.h>
 #include <unistd.h>
 #include <string.h>
-#include <errno.h>
 
 #define PORT 8080
 
