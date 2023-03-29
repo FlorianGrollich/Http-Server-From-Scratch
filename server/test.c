@@ -31,7 +31,7 @@ int main () {
         perror("WSAStartup failed: %d\n");
         exit(1);
     }
-    struct Server server = server_constructor(AF_INET, SOCK_STREAM, 0, INADDR_ANY, 2646, 10, launch);
+    struct Server server = server_constructor(AF_INET, SOCK_STREAM, 0, INADDR_ANY, 8080, 10, launch);
     server.launch(&server);
     printf("Server created\n");
     return 0;
