@@ -24,7 +24,6 @@ void launch(struct Server *server) {
 int main () {
 
     WSADATA wsaData;
-
     int iResult;
     iResult = WSAStartup(MAKEWORD(2,2), &wsaData);
     if (iResult != 0) {
