@@ -11,6 +11,7 @@ enum HTTPMethod {
     DELETE,
     HEAD,
     OPTIONS,
+    CONNECT,
     PATCH
 };
 
