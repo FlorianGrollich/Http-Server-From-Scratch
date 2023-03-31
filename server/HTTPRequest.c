@@ -4,6 +4,29 @@
 #include "HTTPRequest.h"
 #include <string.h>
 
+
+int method_select(char *method) {
+    if(strcmp(method, "GET") == 0) {
+        return GET;
+    } else if(strcmp(method, "POST") == 0) {
+        return POST;
+    } else if(strcmp(method, "PUT") == 0) {
+        return PUT;
+    } else if(strcmp(method, "DELETE") == 0) {
+        return DELETE;
+    } else if(strcmp(method, "HEAD") == 0) {
+        return HEAD;
+    } else if(strcmp(method, "OPTIONS") == 0) {
+        return OPTIONS;
+    }
+    else if(strcmp(method, "CONNECT") == 0) {
+        return CONNECT;
+    }
+    else if(strcmp(method, "PATCH") == 0) {
+        return PATCH;
+    }
+}
+
 struct HTTPRequest http_request_constructor(char *request_string) {
     for (int i = 0; i< strlen(request_string)-2; i++) {
         if(request_string[i] == '\n' && request_string[i+1] == '\n') {
@@ -17,23 +40,7 @@ struct HTTPRequest http_request_constructor(char *request_string) {
     struct HTTPRequest request;
 
     char *method = strtok(request_line, " ");
-    if(strcmp(method, "GET") == 0) {
-        request.method = GET;
-    } else if(strcmp(method, "POST") == 0) {
-        request.method = POST;
-    } else if(strcmp(method, "PUT") == 0) {
-        request.method = PUT;
-    } else if(strcmp(method, "DELETE") == 0) {
-        request.method = DELETE;
-    } else if(strcmp(method, "HEAD") == 0) {
-        request.method = HEAD;
-    } else if(strcmp(method, "OPTIONS") == 0) {
-        request.method = OPTIONS;
-    }
-    else if(strcmp(method, "CONNECT") == 0) {
-        request.method = CONNECT;
-    }
-    else if(strcmp(method, "PATCH") == 0) {
-        request.method = PATCH;
-    }
+    request.Method = method_select(method);
+
+    return request;
 }

@@ -16,7 +16,7 @@ enum HTTPMethod {
 };
 
 struct HTTPRequest {
-    enum HTTPMethod method;
+    enum HTTPMethod Method;
     char *URI;
     float HTTPVersion;
 
