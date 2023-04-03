@@ -41,6 +41,13 @@ struct HTTPRequest http_request_constructor(char *request_string) {
 
     char *method = strtok(request_line, " ");
     request.Method = method_select(method);
+    char *URI = strtok(NULL, " ");
+    request.URI = URI;
+    char *HTTPVersion = strtok(NULL, " ");
+    HTTPVersion = strtok(HTTPVersion,"/");
+    HTTPVersion = strtok(NULL,"/");
+
+
 
     return request;
 }
