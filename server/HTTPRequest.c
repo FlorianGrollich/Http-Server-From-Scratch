@@ -3,6 +3,7 @@
 //
 #include "HTTPRequest.h"
 #include <string.h>
+#include <stdlib.h>
 
 
 int method_select(char *method) {
@@ -46,6 +47,7 @@ struct HTTPRequest http_request_constructor(char *request_string) {
     char *HTTPVersion = strtok(NULL, " ");
     HTTPVersion = strtok(HTTPVersion,"/");
     HTTPVersion = strtok(NULL,"/");
+    request.HTTPVersion = (float)atof(HTTPVersion);
 
 
 
