@@ -29,12 +29,16 @@ int method_select(char *method) {
 }
 
 struct HTTPRequest http_request_constructor(char *request_string) {
-    for (int i = 0; i< strlen(request_string)-2; i++) {
-        if(request_string[i] == '\n' && request_string[i+1] == '\n') {
-            request_string[i+1] = '|';
+
+
+    char request_string_copy[strlen(request_string)];
+    strcpy(request_string_copy, request_string);
+    for (int i = 0; i< strlen(request_string_copy)-2; i++) {
+        if(request_string_copy[i] == '\n' && request_string_copy[i+1] == '\n') {
+            request_string_copy[i+1] = '|';
         }
     }
-    char *request_line = strtok(request_string, "\n");
+    char *request_line = strtok(request_string_copy, "\n");
     char *header_fields = strtok(NULL, "|");
     char *message_body = strtok(NULL, "|");
 
