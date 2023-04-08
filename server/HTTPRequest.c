@@ -5,7 +5,6 @@
 #include <string.h>
 #include <stdlib.h>
 
-
 int method_select(char *method) {
     if(strcmp(method, "GET") == 0) {
         return GET;
