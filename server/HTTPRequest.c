@@ -5,6 +5,8 @@
 #include <string.h>
 #include <stdlib.h>
 
+#include "../DataStructures/Lists/Queue.h"
+
 int method_select(char *method) {
     if(strcmp(method, "GET") == 0) {
         return GET;
@@ -52,6 +54,26 @@ struct HTTPRequest http_request_constructor(char *request_string) {
     HTTPVersion = strtok(NULL,"/");
     request.HTTPVersion = (float)atof(HTTPVersion);
 
+    request.header_fields = dictionary_constructor(compare_string_keys);
+
+    struct Queue headers = queue_constructor();
+
+    char *token = strtok(header_fields, "\n");
+    while(token) {
+        headers.push(&headers, token, sizeof(*token));
+        token = strtok(NULL, "\n");
+
+    }
+
+    char *header = (char *)headers.peek(&headers);
+
+    while(header) {
+        char *key = strtok(header, ":");
+        char *value = strtok(NULL, "|");
+        request.header_fields.insert(&request.header_fields, key, sizeof(*key), value, sizeof(*value));
+        headers.pop(&headers);
+        header = (char *)headers.peek(&headers);
+    }
 
 
     return request;

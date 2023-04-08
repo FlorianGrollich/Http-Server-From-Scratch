@@ -4,6 +4,8 @@
 #ifndef HTTPRequest_h
 #define HTTPRequest_h
 
+#include "../DataStructures/Dictionary/Dictionary.h"
+
 enum HTTPMethod {
     GET,
     POST,
@@ -19,7 +21,7 @@ struct HTTPRequest {
     enum HTTPMethod Method;
     char *URI;
     float HTTPVersion;
-
+    struct Dictionary header_fields;
 };
 
 
