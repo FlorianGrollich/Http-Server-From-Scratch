@@ -2,7 +2,7 @@
 #include <winsock2.h>
 #include <ws2tcpip.h>
 #include <unistd.h>
-#include "Server.h"
+#include "server/Server.h"
 
 void launch(struct Server *server) {
 
@@ -13,7 +13,8 @@ void launch(struct Server *server) {
         unsigned int new_socket = accept(server->socket, (struct sockaddr *)&server->address, (socklen_t*)&addrlen);
 
         read( new_socket , buffer, 30000);
-        printf("%s\n",buffer );
+
+        printf("%s\n",buffer);
         write(new_socket , "Hello Buddy!" , 17);
         close(new_socket);
     }
