@@ -55,7 +55,8 @@
 			},
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1
 			]
 		}
 	],
@@ -71,6 +72,16 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
+			},
+			{
+				"backtrace" : 1,
+				"fragment" : "-lws2_32",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 1,
+				"fragment" : "-lwsock32",
+				"role" : "libraries"
 			},
 			{
 				"backtrace" : 1,
@@ -102,7 +113,8 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1
 			]
 		}
 	],
@@ -112,6 +124,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "main.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "server/Server.c",
 			"sourceGroupIndex" : 0
 		}
 	],

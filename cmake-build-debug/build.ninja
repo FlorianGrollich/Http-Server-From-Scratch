@@ -88,6 +88,12 @@ build CMakeFiles/server.dir/main.c.obj: C_COMPILER__server_Debug C$:/Users/F-Gro
   OBJECT_DIR = CMakeFiles\server.dir
   OBJECT_FILE_DIR = CMakeFiles\server.dir
 
+build CMakeFiles/server.dir/server/Server.c.obj: C_COMPILER__server_Debug C$:/Users/F-Gro/CLionProjects/server-from-scratch/server/Server.c || cmake_object_order_depends_target_server
+  DEP_FILE = CMakeFiles\server.dir\server\Server.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu11
+  OBJECT_DIR = CMakeFiles\server.dir
+  OBJECT_FILE_DIR = CMakeFiles\server.dir\server
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target server
@@ -96,9 +102,9 @@ build CMakeFiles/server.dir/main.c.obj: C_COMPILER__server_Debug C$:/Users/F-Gro
 #############################################
 # Link the executable server.exe
 
-build server.exe: C_EXECUTABLE_LINKER__server_Debug CMakeFiles/server.dir/main.c.obj
+build server.exe: C_EXECUTABLE_LINKER__server_Debug CMakeFiles/server.dir/main.c.obj CMakeFiles/server.dir/server/Server.c.obj
   FLAGS = -g
-  LINK_LIBRARIES = -lws2_32  -lwsock32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = -lws2_32  -lwsock32  -lws2_32  -lwsock32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\server.dir
   POST_BUILD = cd .
   PRE_LINK = cd .

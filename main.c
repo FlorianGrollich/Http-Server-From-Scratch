@@ -10,13 +10,23 @@ void launch(struct Server *server) {
         char buffer[30000];
         printf("=========Waiting for new connection=========\n");
         int addrlen = sizeof(server->address);
-        unsigned int new_socket = accept(server->socket, (struct sockaddr *)&server->address, (socklen_t*)&addrlen);
-
-        read( new_socket , buffer, 30000);
-
-        printf("%s\n",buffer);
-        write(new_socket , "Hello Buddy!" , 17);
-        close(new_socket);
+        int new_socket = -1;
+        new_socket = accept(server->socket, (struct sockaddr *)&server->address, (socklen_t*)&addrlen);
+        if (new_socket == -1) {
+            perror("accept failed");
+        } else {
+            int valread = read(new_socket, buffer, 30000);
+            if (valread == -1) {
+                perror("read failed");
+            }
+            int result = write(new_socket, "Hello Buddy!", 12);
+            if (result == -1) {
+                perror("write failed");
+            }
+            if (close(new_socket) == -1) {
+                perror("close failed");
+            }
+        }
     }
 
 }
