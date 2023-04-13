@@ -1,21 +1,15 @@
 #include <stdio.h>
-#include <winsock2.h>
-#include <ws2tcpip.h>
 #include <unistd.h>
 #include <string.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <errno.h>
+#include <arpa/inet.h>
 
 #define PORT 8080
 
 int main(int argc, char const *argv[])
 {
-    WSADATA wsaData;
-
-    int iResult;
-    iResult = WSAStartup(MAKEWORD(2,2), &wsaData);
-    if (iResult != 0) {
-        printf("WSAStartup failed: %d\n", iResult);
-        return 1;
-    }
     unsigned int sock = 0; long valread;
     struct sockaddr_in serv_addr;
     char *hello = "Hello from client";

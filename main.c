@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include <winsock2.h>
-#include <ws2tcpip.h>
+#include <sys/socket.h>
 #include <unistd.h>
+#include <netinet/in.h>
 #include "server/Server.h"
 
 void launch(struct Server *server) {
@@ -34,13 +34,6 @@ void launch(struct Server *server) {
 
 int main () {
 
-    WSADATA wsaData;
-    int iResult;
-    iResult = WSAStartup(MAKEWORD(2,2), &wsaData);
-    if (iResult != 0) {
-        perror("WSAStartup failed: %d\n");
-        exit(1);
-    }
     struct Server server = server_constructor(AF_INET, SOCK_STREAM, 0, INADDR_ANY, 8080, 10, launch);
     server.launch(&server);
     printf("Server created\n");

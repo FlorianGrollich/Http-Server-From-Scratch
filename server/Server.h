@@ -1,7 +1,8 @@
 #ifndef Server_h
 #define Server_h
 
-#include <winsock2.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
 
 struct Server {
     int domain;
