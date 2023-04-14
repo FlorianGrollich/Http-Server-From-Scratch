@@ -2,7 +2,8 @@
 // Created by F-Gro on 23.03.2023.
 //
 #include "Server.h"
-
+#include <stdio.h>
+#include <stdlib.h>
 struct Server server_constructor(int domain, int service, int protocol, u_long innterface, int port, int backlog, void(*launch)(struct Server *server)) {
     struct Server server;
 
