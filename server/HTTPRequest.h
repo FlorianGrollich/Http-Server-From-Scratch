@@ -21,9 +21,14 @@ struct HTTPRequest {
     enum HTTPMethod Method;
     char *URI;
     float HTTPVersion;
+    struct Dictionary query_parameters;
     struct Dictionary header_fields;
+    char *Payload;
 };
 
+int method_select(char *method);
+
+struct Dictionary query_parameters_constructor(char *URI);
 
 struct HTTPRequest http_request_constructor(char *request_string);
 

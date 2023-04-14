@@ -1,6 +1,3 @@
-//
-// Created by F-Gro on 31.03.2023.
-//
 #include "HTTPRequest.h"
 #include <string.h>
 #include <stdlib.h>
@@ -62,7 +59,6 @@ struct HTTPRequest http_request_constructor(char *request_string) {
     while(token) {
         headers.push(&headers, token, sizeof(*token));
         token = strtok(NULL, "\n");
-
     }
 
     char *header = (char *)headers.peek(&headers);
