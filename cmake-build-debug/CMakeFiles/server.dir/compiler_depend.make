@@ -67,6 +67,10 @@ CMakeFiles/server.dir/main.c.o: /mnt/c/Users/F-Gro/CLionProjects/server-from-scr
   /usr/include/x86_64-linux-gnu/asm/sockios.h \
   /usr/include/asm-generic/sockios.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
+  /usr/include/string.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/strings.h \
   /usr/include/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
   /usr/include/x86_64-linux-gnu/bits/environments.h \
@@ -172,6 +176,10 @@ CMakeFiles/server.dir/server/Server.c.o: /mnt/c/Users/F-Gro/CLionProjects/server
 
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
+/usr/include/strings.h:
+
+/usr/include/string.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h:
 
 /usr/include/asm-generic/bitsperlong.h:
@@ -252,6 +260,8 @@ CMakeFiles/server.dir/server/Server.c.o: /mnt/c/Users/F-Gro/CLionProjects/server
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
 /usr/include/stdc-predef.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
@@ -289,6 +299,8 @@ CMakeFiles/server.dir/server/Server.c.o: /mnt/c/Users/F-Gro/CLionProjects/server
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 

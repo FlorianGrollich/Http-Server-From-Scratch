@@ -26,6 +26,22 @@ int method_select(char *method) {
     }
 }
 
+struct Dictionary query_parameters_constructor(char *URI) {
+    struct Dictionary query_parameters = dictionary_constructor(compare_string_keys);
+    char *query_string = strchr(URI, '?');
+    if(query_string) {
+        query_string++;
+        char *token = strtok(query_string, "&");
+        while(token) {
+            char *key = strtok(token, "=");
+            char *value = strtok(NULL, "&");
+            query_parameters.insert(&query_parameters, key,sizeof(*key), value, sizeof(*value));
+            token = strtok(NULL, "&");
+        }
+    }
+    return query_parameters;
+}
+
 struct HTTPRequest http_request_constructor(char *request_string) {
 
 
@@ -69,6 +85,11 @@ struct HTTPRequest http_request_constructor(char *request_string) {
         request.header_fields.insert(&request.header_fields, key, sizeof(*key), value, sizeof(*value));
         headers.pop(&headers);
         header = (char *)headers.peek(&headers);
+    }
+
+    int hasQueryParameters = strchr(URI, '?') != NULL;
+    if(hasQueryParameters) {
+        request.query_parameters = query_parameters_constructor(URI);
     }
 
 
