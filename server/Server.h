@@ -16,6 +16,8 @@ struct Server {
 
     unsigned int socket;
 
+    struct Dictionary *routes;
+
     void (*launch)(struct Server *server);
 };
 
