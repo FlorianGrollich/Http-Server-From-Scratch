@@ -93,6 +93,44 @@
 					<DistClean command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="main">
+				<Option output="/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug/main" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug/Makefile&quot;  VERBOSE=1 main"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="main/fast">
+				<Option output="/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug/main" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug/Makefile&quot;  VERBOSE=1 main/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug"/>
 				<Option type="4"/>
@@ -118,15 +156,22 @@
 			<Option target="client"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/main.c">
+			<Option target="client"/>
 			<Option target="server"/>
+			<Option target="main"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/server/Server.c">
 			<Option target="server"/>
+			<Option target="main"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/server/Server.h">
 			<Option target="server"/>
+			<Option target="main"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/index.html">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

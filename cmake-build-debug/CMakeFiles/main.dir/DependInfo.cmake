@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/client.c" "CMakeFiles/client.dir/client.c.o" "gcc" "CMakeFiles/client.dir/client.c.o.d"
-  "/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/main.c" "CMakeFiles/client.dir/main.c.o" "gcc" "CMakeFiles/client.dir/main.c.o.d"
+  "/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/main.c" "CMakeFiles/main.dir/main.c.o" "gcc" "CMakeFiles/main.dir/main.c.o.d"
+  "/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/server/Server.c" "CMakeFiles/main.dir/server/Server.c.o" "gcc" "CMakeFiles/main.dir/server/Server.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

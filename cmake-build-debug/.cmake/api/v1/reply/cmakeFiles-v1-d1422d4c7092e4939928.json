@@ -96,6 +96,9 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "/usr/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"path" : "index.html"
 		}
 	],
 	"kind" : "cmakeFiles",
