@@ -73,8 +73,17 @@ CMakeFiles/main.dir/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
  /usr/include/netinet/in.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/include/x86_64-linux-gnu/bits/in.h /usr/include/malloc.h \
- /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /usr/include/x86_64-linux-gnu/bits/in.h /usr/include/stdlib.h \
+ /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/server/Server.h
+ /mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/server/Server.h \
+ /mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/server/HTTPRequest.h \
+ /mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/server/../DataStructures/Dictionary/Dictionary.h \
+ /mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/server/../DataStructures/Dictionary/../Trees/BinarySearchTree.h \
+ /mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/server/../DataStructures/Dictionary/../Trees/../Common/Node.h \
+ /mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/server/../DataStructures/Dictionary/../Lists/LinkedList.h \
+ /mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/server/../DataStructures/Dictionary/../Lists/../Common/Node.h \
+ /mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/server/../DataStructures/Dictionary/Entry.h \
+ /mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/server/HTTPResponse.h \
+ /mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/handleRoutes.h

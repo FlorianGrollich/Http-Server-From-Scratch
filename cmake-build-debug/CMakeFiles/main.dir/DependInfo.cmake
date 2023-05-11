@@ -8,7 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/handleRoutes.c" "CMakeFiles/main.dir/handleRoutes.c.o" "gcc" "CMakeFiles/main.dir/handleRoutes.c.o.d"
   "/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/main.c" "CMakeFiles/main.dir/main.c.o" "gcc" "CMakeFiles/main.dir/main.c.o.d"
+  "/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/server/HTTPRequest.c" "CMakeFiles/main.dir/server/HTTPRequest.c.o" "gcc" "CMakeFiles/main.dir/server/HTTPRequest.c.o.d"
+  "/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/server/HTTPResponse.c" "CMakeFiles/main.dir/server/HTTPResponse.c.o" "gcc" "CMakeFiles/main.dir/server/HTTPResponse.c.o.d"
   "/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/server/Server.c" "CMakeFiles/main.dir/server/Server.c.o" "gcc" "CMakeFiles/main.dir/server/Server.c.o.d"
   )
 

@@ -21,6 +21,12 @@ struct Server server_constructor(int domain, int service, int protocol, u_long i
 
     server.socket = socket(domain, service, protocol);
 
+    int yes = 1;
+    if (setsockopt(server.socket, SOL_SOCKET, SO_REUSEADDR, &yes, sizeof(int)) == -1) {
+        perror("setsockopt");
+        exit(1);
+    }
+
     if(server.socket < 0) {
         perror("Socket creation error: ");
         exit(1);

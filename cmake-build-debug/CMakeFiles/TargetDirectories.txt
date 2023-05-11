@@ -1,3 +1,9 @@
+/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug/CMakeFiles/dictionary.dir
+/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug/CMakeFiles/queue.dir
+/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug/CMakeFiles/linked_list.dir
+/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug/CMakeFiles/binary_tree.dir
+/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug/CMakeFiles/node.dir
+/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug/CMakeFiles/entry.dir
 /mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug/CMakeFiles/client.dir
 /mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug/CMakeFiles/server.dir
 /mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug/CMakeFiles/main.dir

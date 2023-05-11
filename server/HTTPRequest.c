@@ -1,7 +1,6 @@
 #include "HTTPRequest.h"
 #include <string.h>
 #include <stdlib.h>
-
 #include "../DataStructures/Lists/Queue.h"
 
 int method_select(char *method) {
@@ -24,6 +23,7 @@ int method_select(char *method) {
     else if(strcmp(method, "PATCH") == 0) {
         return PATCH;
     }
+    return -1;
 }
 
 struct Dictionary query_parameters_constructor(char *URI) {
@@ -47,14 +47,8 @@ struct HTTPRequest http_request_constructor(char *request_string) {
 
     char request_string_copy[strlen(request_string)];
     strcpy(request_string_copy, request_string);
-    for (int i = 0; i< strlen(request_string_copy)-2; i++) {
-        if(request_string_copy[i] == '\n' && request_string_copy[i+1] == '\n') {
-            request_string_copy[i+1] = '|';
-        }
-    }
     char *request_line = strtok(request_string_copy, "\n");
     char *header_fields = strtok(NULL, "|");
-    char *message_body = strtok(NULL, "|");
 
     struct HTTPRequest request;
 
@@ -67,29 +61,21 @@ struct HTTPRequest http_request_constructor(char *request_string) {
     HTTPVersion = strtok(NULL,"/");
     request.HTTPVersion = (float)atof(HTTPVersion);
 
-    request.header_fields = dictionary_constructor(compare_string_keys);
+    char *content_type_header = "Content-Type: application/x-www-form-urlencoded";
+    char *content_length_header = "Content-Length: ";
+    char *payload_start = strstr(header_fields, "\r\n\r\n") + 4;
+    char *content_type_field = strstr(header_fields, content_type_header);
+    char *content_length_field = strstr(header_fields, content_length_header);
 
-    struct Queue headers = queue_constructor();
+    if (content_type_field != NULL && content_length_field != NULL) {
+        char *content_length_str = content_length_field + strlen(content_length_header);
+        int content_length = atoi(content_length_str);
 
-    char *token = strtok(header_fields, "\n");
-    while(token) {
-        headers.push(&headers, token, sizeof(*token));
-        token = strtok(NULL, "\n");
-    }
-
-    char *header = (char *)headers.peek(&headers);
-
-    while(header) {
-        char *key = strtok(header, ":");
-        char *value = strtok(NULL, "|");
-        request.header_fields.insert(&request.header_fields, key, sizeof(*key), value, sizeof(*value));
-        headers.pop(&headers);
-        header = (char *)headers.peek(&headers);
-    }
-
-    int hasQueryParameters = strchr(URI, '?') != NULL;
-    if(hasQueryParameters) {
-        request.query_parameters = query_parameters_constructor(URI);
+        request.Payload = malloc(content_length + 1);
+        strncpy(request.Payload, payload_start, content_length);
+        request.Payload[content_length] = '\0';
+    } else {
+        request.Payload = NULL;
     }
 
 

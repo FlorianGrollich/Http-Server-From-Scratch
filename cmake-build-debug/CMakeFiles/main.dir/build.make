@@ -97,19 +97,73 @@ CMakeFiles/main.dir/server/Server.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/server/Server.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/server/Server.c -o CMakeFiles/main.dir/server/Server.c.s
 
+CMakeFiles/main.dir/server/HTTPRequest.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/server/HTTPRequest.c.o: /mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/server/HTTPRequest.c
+CMakeFiles/main.dir/server/HTTPRequest.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/main.dir/server/HTTPRequest.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/server/HTTPRequest.c.o -MF CMakeFiles/main.dir/server/HTTPRequest.c.o.d -o CMakeFiles/main.dir/server/HTTPRequest.c.o -c /mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/server/HTTPRequest.c
+
+CMakeFiles/main.dir/server/HTTPRequest.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/server/HTTPRequest.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/server/HTTPRequest.c > CMakeFiles/main.dir/server/HTTPRequest.c.i
+
+CMakeFiles/main.dir/server/HTTPRequest.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/server/HTTPRequest.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/server/HTTPRequest.c -o CMakeFiles/main.dir/server/HTTPRequest.c.s
+
+CMakeFiles/main.dir/handleRoutes.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/handleRoutes.c.o: /mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/handleRoutes.c
+CMakeFiles/main.dir/handleRoutes.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/main.dir/handleRoutes.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/handleRoutes.c.o -MF CMakeFiles/main.dir/handleRoutes.c.o.d -o CMakeFiles/main.dir/handleRoutes.c.o -c /mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/handleRoutes.c
+
+CMakeFiles/main.dir/handleRoutes.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/handleRoutes.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/handleRoutes.c > CMakeFiles/main.dir/handleRoutes.c.i
+
+CMakeFiles/main.dir/handleRoutes.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/handleRoutes.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/handleRoutes.c -o CMakeFiles/main.dir/handleRoutes.c.s
+
+CMakeFiles/main.dir/server/HTTPResponse.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/server/HTTPResponse.c.o: /mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/server/HTTPResponse.c
+CMakeFiles/main.dir/server/HTTPResponse.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/main.dir/server/HTTPResponse.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/server/HTTPResponse.c.o -MF CMakeFiles/main.dir/server/HTTPResponse.c.o.d -o CMakeFiles/main.dir/server/HTTPResponse.c.o -c /mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/server/HTTPResponse.c
+
+CMakeFiles/main.dir/server/HTTPResponse.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/server/HTTPResponse.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/server/HTTPResponse.c > CMakeFiles/main.dir/server/HTTPResponse.c.i
+
+CMakeFiles/main.dir/server/HTTPResponse.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/server/HTTPResponse.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/server/HTTPResponse.c -o CMakeFiles/main.dir/server/HTTPResponse.c.s
+
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/main.c.o" \
-"CMakeFiles/main.dir/server/Server.c.o"
+"CMakeFiles/main.dir/server/Server.c.o" \
+"CMakeFiles/main.dir/server/HTTPRequest.c.o" \
+"CMakeFiles/main.dir/handleRoutes.c.o" \
+"CMakeFiles/main.dir/server/HTTPResponse.c.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
 main: CMakeFiles/main.dir/main.c.o
 main: CMakeFiles/main.dir/server/Server.c.o
+main: CMakeFiles/main.dir/server/HTTPRequest.c.o
+main: CMakeFiles/main.dir/handleRoutes.c.o
+main: CMakeFiles/main.dir/server/HTTPResponse.c.o
 main: CMakeFiles/main.dir/build.make
+main: libdictionary.a
+main: libqueue.a
+main: liblinked_list.a
+main: libnode.a
+main: libbinary_tree.a
+main: libentry.a
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

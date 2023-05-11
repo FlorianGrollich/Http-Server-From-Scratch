@@ -5,8 +5,14 @@
 #include <netinet/in.h>
 #include <stdlib.h>
 #include "server/Server.h"
+#include "server/HTTPRequest.h"
+#include "server/HTTPResponse.h"
+#include "handleRoutes.h"
 
 void launch(struct Server *server) {
+
+    char* msg[10000] = {};
+    int msg_count = 0;
 
     while(1) {
         char buffer[30000];
@@ -22,52 +28,25 @@ void launch(struct Server *server) {
                 perror("read failed");
             }
             printf("%s\n", buffer);
-            char *filename = "index.html";
-            FILE *fp = fopen(filename, "r");
-            if (fp == NULL) {
-                perror("file open failed");
-                exit(1);
-            }
-            fseek(fp, 0, SEEK_END);
-            long fsize = ftell(fp);
-            fseek(fp, 0, SEEK_SET);
 
-            char *html = malloc(fsize + 1);
-            if (html == NULL) {
-                perror("memory allocation failed");
-                exit(1);
+            struct HTTPRequest request = http_request_constructor(buffer);
+
+
+            if(request.Method ==  1) {
+                msg[msg_count] = request.Payload;
+                msg_count++;
             }
 
-            size_t read_size = fread(html, 1, fsize, fp);
-            if (read_size != fsize) {
-                perror("file read failed");
-                exit(1);
-            }
+            char* filename = handle_routes(request.URI);
 
-            fclose(fp);
+            char* response = get_HTML_response(filename, msg, msg_count);
 
-            html[fsize] = '\0';
-            char response[4096];
-            snprintf(response, 4096,
-                     "HTTP/1.1 200 OK\r\n"
-                     "Content-Type: text/html\r\n"
-                     "Content-Length: %ld\r\n"
-                     "\r\n"
-                     "%s",
-                     fsize, html
-            );
+
+
 
             // Send the response
             int result = write(new_socket, response, strlen(response));
-            if (result == -1) {
-                perror("write failed");
-            }
-            if (close(new_socket) == -1) {
-                perror("close failed");
-            }
-
-            // Free the memory allocated for the HTML content
-            free(html);
+            free(response);
             if (result == -1) {
                 perror("write failed");
             }

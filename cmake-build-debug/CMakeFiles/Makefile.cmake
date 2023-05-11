@@ -10,7 +10,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/CMakeLists.txt"
   "CMakeFiles/3.26.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.26.3/CMakeSystem.cmake"
-  "/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/index.html"
+  "/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/html/404.html"
+  "/mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/html/index.html"
   "/usr/share/cmake-3.26/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake"
   "/usr/share/cmake-3.26/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
@@ -38,12 +39,19 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "index.html"
+  "html/index.html"
+  "html/404.html"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/dictionary.dir/DependInfo.cmake"
+  "CMakeFiles/queue.dir/DependInfo.cmake"
+  "CMakeFiles/linked_list.dir/DependInfo.cmake"
+  "CMakeFiles/binary_tree.dir/DependInfo.cmake"
+  "CMakeFiles/node.dir/DependInfo.cmake"
+  "CMakeFiles/entry.dir/DependInfo.cmake"
   "CMakeFiles/client.dir/DependInfo.cmake"
   "CMakeFiles/server.dir/DependInfo.cmake"
   "CMakeFiles/main.dir/DependInfo.cmake"

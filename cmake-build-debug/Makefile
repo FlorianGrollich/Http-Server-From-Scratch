@@ -117,6 +117,84 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named dictionary
+
+# Build rule for target.
+dictionary: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dictionary
+.PHONY : dictionary
+
+# fast build rule for target.
+dictionary/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dictionary.dir/build.make CMakeFiles/dictionary.dir/build
+.PHONY : dictionary/fast
+
+#=============================================================================
+# Target rules for targets named queue
+
+# Build rule for target.
+queue: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 queue
+.PHONY : queue
+
+# fast build rule for target.
+queue/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/queue.dir/build.make CMakeFiles/queue.dir/build
+.PHONY : queue/fast
+
+#=============================================================================
+# Target rules for targets named linked_list
+
+# Build rule for target.
+linked_list: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 linked_list
+.PHONY : linked_list
+
+# fast build rule for target.
+linked_list/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linked_list.dir/build.make CMakeFiles/linked_list.dir/build
+.PHONY : linked_list/fast
+
+#=============================================================================
+# Target rules for targets named binary_tree
+
+# Build rule for target.
+binary_tree: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 binary_tree
+.PHONY : binary_tree
+
+# fast build rule for target.
+binary_tree/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binary_tree.dir/build.make CMakeFiles/binary_tree.dir/build
+.PHONY : binary_tree/fast
+
+#=============================================================================
+# Target rules for targets named node
+
+# Build rule for target.
+node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 node
+.PHONY : node
+
+# fast build rule for target.
+node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/node.dir/build.make CMakeFiles/node.dir/build
+.PHONY : node/fast
+
+#=============================================================================
+# Target rules for targets named entry
+
+# Build rule for target.
+entry: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 entry
+.PHONY : entry
+
+# fast build rule for target.
+entry/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/entry.dir/build.make CMakeFiles/entry.dir/build
+.PHONY : entry/fast
+
+#=============================================================================
 # Target rules for targets named client
 
 # Build rule for target.
@@ -155,6 +233,150 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+DataStructures/Common/Node.o: DataStructures/Common/Node.c.o
+.PHONY : DataStructures/Common/Node.o
+
+# target to build an object file
+DataStructures/Common/Node.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/node.dir/build.make CMakeFiles/node.dir/DataStructures/Common/Node.c.o
+.PHONY : DataStructures/Common/Node.c.o
+
+DataStructures/Common/Node.i: DataStructures/Common/Node.c.i
+.PHONY : DataStructures/Common/Node.i
+
+# target to preprocess a source file
+DataStructures/Common/Node.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/node.dir/build.make CMakeFiles/node.dir/DataStructures/Common/Node.c.i
+.PHONY : DataStructures/Common/Node.c.i
+
+DataStructures/Common/Node.s: DataStructures/Common/Node.c.s
+.PHONY : DataStructures/Common/Node.s
+
+# target to generate assembly for a file
+DataStructures/Common/Node.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/node.dir/build.make CMakeFiles/node.dir/DataStructures/Common/Node.c.s
+.PHONY : DataStructures/Common/Node.c.s
+
+DataStructures/Dictionary/Dictionary.o: DataStructures/Dictionary/Dictionary.c.o
+.PHONY : DataStructures/Dictionary/Dictionary.o
+
+# target to build an object file
+DataStructures/Dictionary/Dictionary.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dictionary.dir/build.make CMakeFiles/dictionary.dir/DataStructures/Dictionary/Dictionary.c.o
+.PHONY : DataStructures/Dictionary/Dictionary.c.o
+
+DataStructures/Dictionary/Dictionary.i: DataStructures/Dictionary/Dictionary.c.i
+.PHONY : DataStructures/Dictionary/Dictionary.i
+
+# target to preprocess a source file
+DataStructures/Dictionary/Dictionary.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dictionary.dir/build.make CMakeFiles/dictionary.dir/DataStructures/Dictionary/Dictionary.c.i
+.PHONY : DataStructures/Dictionary/Dictionary.c.i
+
+DataStructures/Dictionary/Dictionary.s: DataStructures/Dictionary/Dictionary.c.s
+.PHONY : DataStructures/Dictionary/Dictionary.s
+
+# target to generate assembly for a file
+DataStructures/Dictionary/Dictionary.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dictionary.dir/build.make CMakeFiles/dictionary.dir/DataStructures/Dictionary/Dictionary.c.s
+.PHONY : DataStructures/Dictionary/Dictionary.c.s
+
+DataStructures/Dictionary/Entry.o: DataStructures/Dictionary/Entry.c.o
+.PHONY : DataStructures/Dictionary/Entry.o
+
+# target to build an object file
+DataStructures/Dictionary/Entry.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/entry.dir/build.make CMakeFiles/entry.dir/DataStructures/Dictionary/Entry.c.o
+.PHONY : DataStructures/Dictionary/Entry.c.o
+
+DataStructures/Dictionary/Entry.i: DataStructures/Dictionary/Entry.c.i
+.PHONY : DataStructures/Dictionary/Entry.i
+
+# target to preprocess a source file
+DataStructures/Dictionary/Entry.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/entry.dir/build.make CMakeFiles/entry.dir/DataStructures/Dictionary/Entry.c.i
+.PHONY : DataStructures/Dictionary/Entry.c.i
+
+DataStructures/Dictionary/Entry.s: DataStructures/Dictionary/Entry.c.s
+.PHONY : DataStructures/Dictionary/Entry.s
+
+# target to generate assembly for a file
+DataStructures/Dictionary/Entry.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/entry.dir/build.make CMakeFiles/entry.dir/DataStructures/Dictionary/Entry.c.s
+.PHONY : DataStructures/Dictionary/Entry.c.s
+
+DataStructures/Lists/LinkedList.o: DataStructures/Lists/LinkedList.c.o
+.PHONY : DataStructures/Lists/LinkedList.o
+
+# target to build an object file
+DataStructures/Lists/LinkedList.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linked_list.dir/build.make CMakeFiles/linked_list.dir/DataStructures/Lists/LinkedList.c.o
+.PHONY : DataStructures/Lists/LinkedList.c.o
+
+DataStructures/Lists/LinkedList.i: DataStructures/Lists/LinkedList.c.i
+.PHONY : DataStructures/Lists/LinkedList.i
+
+# target to preprocess a source file
+DataStructures/Lists/LinkedList.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linked_list.dir/build.make CMakeFiles/linked_list.dir/DataStructures/Lists/LinkedList.c.i
+.PHONY : DataStructures/Lists/LinkedList.c.i
+
+DataStructures/Lists/LinkedList.s: DataStructures/Lists/LinkedList.c.s
+.PHONY : DataStructures/Lists/LinkedList.s
+
+# target to generate assembly for a file
+DataStructures/Lists/LinkedList.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linked_list.dir/build.make CMakeFiles/linked_list.dir/DataStructures/Lists/LinkedList.c.s
+.PHONY : DataStructures/Lists/LinkedList.c.s
+
+DataStructures/Lists/Queue.o: DataStructures/Lists/Queue.c.o
+.PHONY : DataStructures/Lists/Queue.o
+
+# target to build an object file
+DataStructures/Lists/Queue.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/queue.dir/build.make CMakeFiles/queue.dir/DataStructures/Lists/Queue.c.o
+.PHONY : DataStructures/Lists/Queue.c.o
+
+DataStructures/Lists/Queue.i: DataStructures/Lists/Queue.c.i
+.PHONY : DataStructures/Lists/Queue.i
+
+# target to preprocess a source file
+DataStructures/Lists/Queue.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/queue.dir/build.make CMakeFiles/queue.dir/DataStructures/Lists/Queue.c.i
+.PHONY : DataStructures/Lists/Queue.c.i
+
+DataStructures/Lists/Queue.s: DataStructures/Lists/Queue.c.s
+.PHONY : DataStructures/Lists/Queue.s
+
+# target to generate assembly for a file
+DataStructures/Lists/Queue.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/queue.dir/build.make CMakeFiles/queue.dir/DataStructures/Lists/Queue.c.s
+.PHONY : DataStructures/Lists/Queue.c.s
+
+DataStructures/Trees/BinarySearchTree.o: DataStructures/Trees/BinarySearchTree.c.o
+.PHONY : DataStructures/Trees/BinarySearchTree.o
+
+# target to build an object file
+DataStructures/Trees/BinarySearchTree.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binary_tree.dir/build.make CMakeFiles/binary_tree.dir/DataStructures/Trees/BinarySearchTree.c.o
+.PHONY : DataStructures/Trees/BinarySearchTree.c.o
+
+DataStructures/Trees/BinarySearchTree.i: DataStructures/Trees/BinarySearchTree.c.i
+.PHONY : DataStructures/Trees/BinarySearchTree.i
+
+# target to preprocess a source file
+DataStructures/Trees/BinarySearchTree.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binary_tree.dir/build.make CMakeFiles/binary_tree.dir/DataStructures/Trees/BinarySearchTree.c.i
+.PHONY : DataStructures/Trees/BinarySearchTree.c.i
+
+DataStructures/Trees/BinarySearchTree.s: DataStructures/Trees/BinarySearchTree.c.s
+.PHONY : DataStructures/Trees/BinarySearchTree.s
+
+# target to generate assembly for a file
+DataStructures/Trees/BinarySearchTree.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/binary_tree.dir/build.make CMakeFiles/binary_tree.dir/DataStructures/Trees/BinarySearchTree.c.s
+.PHONY : DataStructures/Trees/BinarySearchTree.c.s
+
 client.o: client.c.o
 .PHONY : client.o
 
@@ -178,6 +400,30 @@ client.s: client.c.s
 client.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client.c.s
 .PHONY : client.c.s
+
+handleRoutes.o: handleRoutes.c.o
+.PHONY : handleRoutes.o
+
+# target to build an object file
+handleRoutes.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/handleRoutes.c.o
+.PHONY : handleRoutes.c.o
+
+handleRoutes.i: handleRoutes.c.i
+.PHONY : handleRoutes.i
+
+# target to preprocess a source file
+handleRoutes.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/handleRoutes.c.i
+.PHONY : handleRoutes.c.i
+
+handleRoutes.s: handleRoutes.c.s
+.PHONY : handleRoutes.s
+
+# target to generate assembly for a file
+handleRoutes.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/handleRoutes.c.s
+.PHONY : handleRoutes.c.s
 
 main.o: main.c.o
 .PHONY : main.o
@@ -208,6 +454,54 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/main.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.c.s
 .PHONY : main.c.s
+
+server/HTTPRequest.o: server/HTTPRequest.c.o
+.PHONY : server/HTTPRequest.o
+
+# target to build an object file
+server/HTTPRequest.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/server/HTTPRequest.c.o
+.PHONY : server/HTTPRequest.c.o
+
+server/HTTPRequest.i: server/HTTPRequest.c.i
+.PHONY : server/HTTPRequest.i
+
+# target to preprocess a source file
+server/HTTPRequest.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/server/HTTPRequest.c.i
+.PHONY : server/HTTPRequest.c.i
+
+server/HTTPRequest.s: server/HTTPRequest.c.s
+.PHONY : server/HTTPRequest.s
+
+# target to generate assembly for a file
+server/HTTPRequest.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/server/HTTPRequest.c.s
+.PHONY : server/HTTPRequest.c.s
+
+server/HTTPResponse.o: server/HTTPResponse.c.o
+.PHONY : server/HTTPResponse.o
+
+# target to build an object file
+server/HTTPResponse.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/server/HTTPResponse.c.o
+.PHONY : server/HTTPResponse.c.o
+
+server/HTTPResponse.i: server/HTTPResponse.c.i
+.PHONY : server/HTTPResponse.i
+
+# target to preprocess a source file
+server/HTTPResponse.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/server/HTTPResponse.c.i
+.PHONY : server/HTTPResponse.c.i
+
+server/HTTPResponse.s: server/HTTPResponse.c.s
+.PHONY : server/HTTPResponse.s
+
+# target to generate assembly for a file
+server/HTTPResponse.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/server/HTTPResponse.c.s
+.PHONY : server/HTTPResponse.c.s
 
 server/Server.o: server/Server.c.o
 .PHONY : server/Server.o
@@ -244,15 +538,48 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... binary_tree"
 	@echo "... client"
+	@echo "... dictionary"
+	@echo "... entry"
+	@echo "... linked_list"
 	@echo "... main"
+	@echo "... node"
+	@echo "... queue"
 	@echo "... server"
+	@echo "... DataStructures/Common/Node.o"
+	@echo "... DataStructures/Common/Node.i"
+	@echo "... DataStructures/Common/Node.s"
+	@echo "... DataStructures/Dictionary/Dictionary.o"
+	@echo "... DataStructures/Dictionary/Dictionary.i"
+	@echo "... DataStructures/Dictionary/Dictionary.s"
+	@echo "... DataStructures/Dictionary/Entry.o"
+	@echo "... DataStructures/Dictionary/Entry.i"
+	@echo "... DataStructures/Dictionary/Entry.s"
+	@echo "... DataStructures/Lists/LinkedList.o"
+	@echo "... DataStructures/Lists/LinkedList.i"
+	@echo "... DataStructures/Lists/LinkedList.s"
+	@echo "... DataStructures/Lists/Queue.o"
+	@echo "... DataStructures/Lists/Queue.i"
+	@echo "... DataStructures/Lists/Queue.s"
+	@echo "... DataStructures/Trees/BinarySearchTree.o"
+	@echo "... DataStructures/Trees/BinarySearchTree.i"
+	@echo "... DataStructures/Trees/BinarySearchTree.s"
 	@echo "... client.o"
 	@echo "... client.i"
 	@echo "... client.s"
+	@echo "... handleRoutes.o"
+	@echo "... handleRoutes.i"
+	@echo "... handleRoutes.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... server/HTTPRequest.o"
+	@echo "... server/HTTPRequest.i"
+	@echo "... server/HTTPRequest.s"
+	@echo "... server/HTTPResponse.o"
+	@echo "... server/HTTPResponse.i"
+	@echo "... server/HTTPResponse.s"
 	@echo "... server/Server.o"
 	@echo "... server/Server.i"
 	@echo "... server/Server.s"

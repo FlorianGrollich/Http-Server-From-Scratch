@@ -1,0 +1,10 @@
+//
+// Created by F-Gro on 11.05.2023.
+//
+
+#ifndef SERVER_FROM_SCRATCH_HANDLEROUTES_H
+#define SERVER_FROM_SCRATCH_HANDLEROUTES_H
+
+char *handle_routes(char *URI);
+
+#endif //SERVER_FROM_SCRATCH_HANDLEROUTES_H

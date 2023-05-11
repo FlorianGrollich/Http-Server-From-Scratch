@@ -1,1 +1,1 @@
-/usr/bin/cc -g CMakeFiles/main.dir/main.c.o CMakeFiles/main.dir/server/Server.c.o -o main 
+/usr/bin/cc -g CMakeFiles/main.dir/main.c.o CMakeFiles/main.dir/server/Server.c.o CMakeFiles/main.dir/server/HTTPRequest.c.o CMakeFiles/main.dir/handleRoutes.c.o CMakeFiles/main.dir/server/HTTPResponse.c.o -o main  libdictionary.a libqueue.a liblinked_list.a libnode.a libbinary_tree.a libentry.a 
