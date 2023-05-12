@@ -35,6 +35,20 @@
 
         // send the request
         xhr.send(message);
+        // create new ul element
+        const ul = document.createElement("ul");
+
+        // create new li element
+        const li = document.createElement("li");
+
+        // set innerHTML of li element to message value
+        li.innerHTML = message;
+
+        // append li element to ul element
+        ul.appendChild(li);
+
+        // append ul element to body of HTML document
+        document.body.appendChild(ul);
 
     }
 </script>
