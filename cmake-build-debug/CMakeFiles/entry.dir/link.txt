@@ -1,2 +1,0 @@
-/usr/bin/ar qc libentry.a CMakeFiles/entry.dir/DataStructures/Dictionary/Entry.c.o
-/usr/bin/ranlib libentry.a

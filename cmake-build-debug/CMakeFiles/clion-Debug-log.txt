@@ -1,5 +1,0 @@
-C:\WINDOWS\system32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "export CMAKE_COLOR_DIAGNOSTICS=ON && export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd /mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' -S /mnt/c/Users/F-Gro/CLionProjects/server-from-scratch -B /mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug"
--- Configuring done (0.4s)
--- Generating done (1.4s)
--- Build files have been written to: /mnt/c/Users/F-Gro/CLionProjects/server-from-scratch/cmake-build-debug
-CMake File API: C:\Users\F-Gro\CLionProjects\server-from-scratch\cmake-build-debug: target-binary_tree-Debug-196b14a074640546f37f.json: Cannot resolve compiler path '/usr/bin/cc'

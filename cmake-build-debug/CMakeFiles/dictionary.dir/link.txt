@@ -1,2 +1,0 @@
-/usr/bin/ar qc libdictionary.a CMakeFiles/dictionary.dir/DataStructures/Dictionary/Dictionary.c.o
-/usr/bin/ranlib libdictionary.a
